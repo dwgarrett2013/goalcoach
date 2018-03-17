@@ -2,12 +2,12 @@ import * as firebase from 'firebase';  //import everything from firebase
 
 //config for the firebase application
 const config = {
-  apiKey: "AIzaSyBahmT36v5o57-qEZyVkj94u3QXV9s3tH0",
-  authDomain: "goalcoach-44feb.firebaseapp.com",
-  databaseURL: "https://goalcoach-44feb.firebaseio.com",
-  projectId: "goalcoach-44feb",
-  storageBucket: "goalcoach-44feb.appspot.com",
-  messagingSenderId: "475018130150"
+  apiKey: "",
+  authDomain: "",
+  databaseURL: "",
+  projectId: "",
+  storageBucket: "",
+  messagingSenderId: ""
 };
 
 //initialize firebase application using constant
