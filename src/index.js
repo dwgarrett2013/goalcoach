@@ -1,8 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import registerServiceWorker from './registerServiceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
-registerServiceWorker();
+//import your other component views
+import App from '.components/App';
+import SignIn from '.components/SignIn';
+import SignUp from '.components/SignUp';
+
+ReactDOM.render(
+  <div>App</div>, document.getElementById('root')
+)
