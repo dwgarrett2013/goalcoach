@@ -24,6 +24,12 @@ https://console.firebase.google.com/u/1/project/goalcoach-44feb/authentication/e
 we will then copy the javascript object
 then declare file next to your index called ``firebase.js``
 
+5.  before you run you must enable authentication with email/password
+https://console.firebase.google.com/u/1/project/goalcoach-44feb/authentication/users
+
+when a user is signed up, we actually see the logged in user's information
+
+
 ## Default README.md code
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
