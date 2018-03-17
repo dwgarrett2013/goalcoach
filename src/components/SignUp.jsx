@@ -4,7 +4,7 @@ class SignUp extends Component {
   //this class will render some jsx
   render() {
     return (
-      <div>App</div>
+      <div>SignUp</div>
     )
   }
 }

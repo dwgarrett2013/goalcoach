@@ -11,6 +11,19 @@ SignUp.jsx
 
 3.  update package.json to make sure react-router is ^3.0.1.  Then delete node_modules and rerun npm install to reinstall all the modules
 
+4.  We are using Firebase for authentication to allow user to only see page if they are authenticated
+
+You need to go to the below link to register
+firebase.google.com
+
+then you need to create a new project
+
+we will go to add firebase to your webapp
+https://console.firebase.google.com/u/1/project/goalcoach-44feb/authentication/emails
+
+we will then copy the javascript object
+then declare file next to your index called ``firebase.js``
+
 ## Default README.md code
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
