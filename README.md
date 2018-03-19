@@ -1,5 +1,11 @@
 # goalcoach
 
+## Critical Assumptions
+
+1.  Firebase (created by Google enables strong authentication practices)
+
+2.  Credentials are not provided in the repository for the sake of security.  The developer will need to provide his/her credentials
+
 ## Setup Notes
 1.  Pre install instructions
 ``npm install react, react-dom, firebase ``
@@ -23,6 +29,12 @@ https://console.firebase.google.com/u/1/project/goalcoach-44feb/authentication/e
 
 we will then copy the javascript object
 then declare file next to your index called ``firebase.js``
+
+5.  before you run you must enable authentication with email/password
+https://console.firebase.google.com/u/1/project/goalcoach-44feb/authentication/users
+
+when a user is signed up, we actually see the logged in user's information
+
 
 ## Default README.md code
 
