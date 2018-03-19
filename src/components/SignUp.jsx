@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router';  //this allows us to put links into pages, just need to add a div in another componetn
 import { firebaseApp } from '../firebase';  //imports the firebase authentication thing
 
 class SignUp extends Component {
@@ -40,6 +41,7 @@ class SignUp extends Component {
   //when onClick() is pressed we execute this.signup with an anonomous function
   //the closing div prints there error message if it is present
   //adding margins and px ensure appropriate resizing
+  //adding a link component to allow users to access the sign in page
   render() {
     return (
       <div className="form-inline" style={{margin: '5%'}}>
@@ -68,6 +70,7 @@ class SignUp extends Component {
           </button>
         </div>
         <div>{this.state.error.message}</div>
+        <div><Link to={'/signin'}>Already a user? Sign in instead</Link></div>
       </div>
     )
   }

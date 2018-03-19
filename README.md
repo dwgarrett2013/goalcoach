@@ -1,5 +1,11 @@
 # goalcoach
 
+## Critical Assumptions
+
+1.  Firebase (created by Google enables strong authentication practices)
+
+2.  Credentials are not provided in the repository for the sake of security.  The developer will need to provide his/her credentials
+
 ## Setup Notes
 1.  Pre install instructions
 ``npm install react, react-dom, firebase ``
