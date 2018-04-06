@@ -35,6 +35,8 @@ https://console.firebase.google.com/u/1/project/goalcoach-44feb/authentication/u
 
 when a user is signed up, we actually see the logged in user's information
 
+## Additional clarifications of redux
+https://learn.co/lessons/map-state-to-props-readme
 
 ## Default README.md code
 
