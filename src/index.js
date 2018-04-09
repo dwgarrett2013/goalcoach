@@ -23,14 +23,14 @@ const store = createStore(reducer); //this is store value required for the provi
 firebaseApp.auth().onAuthStateChanged(user => {
   //if a user has signed in, we can direct to app.  We can do this according to how authenticated the user is
   if (user) {
-    console.log('user has signed in or up', user);
+    //console.log('user has signed in or up', user);
     const {email } = user;
     store.dispatch(logUser(email)); //we use the dispatch function to send an action to log the user
     browserHistory.push('/app');  //the user remains signed in if they have not logged out using cookies that are stored on the browser because firebase remembers the user through the browser
   }
   //if no user is signed in, we need to direct them into the login page
   else {
-    console.log('user has signed out or still needs to sign in');
+    //console.log('user has signed out or still needs to sign in');
     browserHistory.replace('/signin');  //If the user every gets logged out, we will need them to sign in again and therefore, we force a redirect to the signin page
   }
 })

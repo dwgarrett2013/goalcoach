@@ -23,8 +23,7 @@ class AddGoal extends Component {
   addGoal() {
     console.log('this', this); //log everything
     const { title } = this.state;  //sets this.state.title using ES6 shorthand
-    const { email } = this.props;  //set the email object value to the value of email in props
-
+    const { email } = this.props.user;  //sets the email using es6 to the value of the user's email. Don't need to specifiy this.props.user.email
     //we want to push a sample value to the database.  This pushes values into the key that has been specified in goalref
     //we can pull each of these values using es6 shorthand
     goalRef.push({email, title});
@@ -59,9 +58,10 @@ class AddGoal extends Component {
 
 //this allows us to access the state as a props arguement.  So we can access email in this application as a props arguement (see the constructor)
 function mapStateToProps(state) {
-  const { email } = state;
+  const { user } = state;
+  //console.log('add user state', state);
   return {
-    email
+    user
   }
 }
 
